@@ -63,7 +63,6 @@
 <script setup>
 import { ref, onMounted} from 'vue';
 import {db} from "../firebase/index.js";
-
 import { collection,query, orderBy, limit,  updateDoc, getDocs,doc, onSnapshot,deleteDoc, setDoc,addDoc } from "firebase/firestore";
 
 
@@ -158,8 +157,8 @@ await updateDoc(washingtonRef, {
 }
 </script>
 <style>
-@import "node_modules\bulma\css\bulma.min.css";
 
+/* node_modules\bulma\css\bulma.min.css */
 .container {
     max-width: 600px!important;
     padding: 20px;
